@@ -540,7 +540,7 @@ const MobileGameInterface: React.FC<MobileGameInterfaceProps> = ({ onBack }) => 
           ? 'bg-slate-900/50 border-slate-800' 
           : 'bg-emerald-50/50 border-emerald-200/50'
       }`}>
-        <div className="grid grid-cols-4 gap-2 text-xs">
+        <div className="grid grid-cols-3 gap-2 text-xs">
           {/* Energy */}
           <div className="text-center">
             <div className={`text-xs font-medium mb-1 transition-colors duration-300 ${
@@ -593,19 +593,6 @@ const MobileGameInterface: React.FC<MobileGameInterfaceProps> = ({ onBack }) => 
             <div className={`text-xs mt-1 transition-colors duration-300 ${
               isDark ? 'text-slate-400' : 'text-emerald-700'
             }`}>{Math.round(gameState.health)}%</div>
-          </div>
-
-          {/* Score */}
-          <div className="text-center">
-            <div className={`text-xs font-medium mb-1 transition-colors duration-300 ${
-              isDark ? 'text-white' : 'text-emerald-900'
-            }`}>Pontos</div>
-            <div className={`text-2xl font-bold mb-1 transition-colors duration-300 ${
-              isDark ? 'text-white' : 'text-gray-900'
-            }`}>{gameState.totalScore}</div>
-            <div className={`text-xs transition-colors duration-300 ${
-              isDark ? 'text-slate-400' : 'text-gray-600'
-            }`}>Total</div>
           </div>
         </div>
       </div>
