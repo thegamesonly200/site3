@@ -339,7 +339,7 @@ const MobileGameInterface: React.FC<MobileGameInterfaceProps> = ({ onBack }) => 
         <div className="px-4 py-2">
           {/* Primeira linha: Foto, Nome, Horário, Dia, Play/Pause, Mute, Save, Reset */}
           <div className="flex items-center justify-between mb-2">
-            {/* Lado esquerdo: Foto de perfil + Nome + Horário + Dia */}
+            {/* Lado esquerdo: Foto de perfil + Nome + Horário */}
             <div className="flex items-center gap-2">
               {/* Foto de perfil do Alex */}
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center border-2 border-emerald-400/30 shadow-md">
@@ -366,19 +366,6 @@ const MobileGameInterface: React.FC<MobileGameInterfaceProps> = ({ onBack }) => 
                   {formatGameTime(gameState.hour, gameState.minute)}
                 </span>
               </div>
-              
-              {/* Numeração do dia */}
-              <div className={`px-2 py-1 rounded-full transition-colors duration-300 ${
-                isDark 
-                  ? 'bg-emerald-500/20 text-emerald-400' 
-                  : 'bg-emerald-500/20 text-emerald-600'
-              }`}>
-                <span className={`text-xs font-bold transition-colors duration-300 ${
-                  isDark ? 'text-emerald-400' : 'text-emerald-600'
-                }`}>
-                  Dia {gameState.day}
-                </span>
-              </div>
             </div>
             
             {/* Lado direito: Controles */}
@@ -386,7 +373,7 @@ const MobileGameInterface: React.FC<MobileGameInterfaceProps> = ({ onBack }) => 
               {/* Botão Play/Pause */}
               <button
                 onClick={togglePlayPause}
-                className={`p-1.5 rounded-full transition-all duration-200 hover:scale-110 ${
+                className={`p-2 rounded-full transition-all duration-200 hover:scale-110 ${
                   gameState.isPlaying 
                     ? 'bg-emerald-500/20 text-emerald-400' 
                     : 'bg-gray-500/20 text-gray-400'
@@ -396,13 +383,13 @@ const MobileGameInterface: React.FC<MobileGameInterfaceProps> = ({ onBack }) => 
                     : 'hover:bg-emerald-100'
                 }`}
               >
-                {gameState.isPlaying ? <Pause className="w-3 h-3" /> : <Play className="w-3 h-3" />}
+                {gameState.isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
               </button>
               
               {/* Botão Mute */}
               <button
                 onClick={toggleMute}
-                className={`p-1.5 rounded-full transition-all duration-200 hover:scale-110 ${
+                className={`p-2 rounded-full transition-all duration-200 hover:scale-110 ${
                   audioSettings.isMuted 
                     ? 'bg-red-500/20 text-red-400' 
                     : 'bg-blue-500/20 text-blue-400'
@@ -413,34 +400,34 @@ const MobileGameInterface: React.FC<MobileGameInterfaceProps> = ({ onBack }) => 
                 }`}
               >
                 {audioSettings.isMuted ? (
-                  <VolumeX className="w-3 h-3" />
+                  <VolumeX className="w-4 h-4" />
                 ) : (
-                  <Volume2 className="w-3 h-3" />
+                  <Volume2 className="w-4 h-4" />
                 )}
               </button>
               
               {/* Botão Save */}
               <button
                 onClick={saveGame}
-                className={`save-button p-1.5 rounded-full transition-all duration-200 hover:scale-110 bg-green-500/20 text-green-400 ${
+                className={`save-button p-2 rounded-full transition-all duration-200 hover:scale-110 bg-green-500/20 text-green-400 ${
                   isDark 
                     ? 'hover:bg-slate-800' 
                     : 'hover:bg-emerald-100'
                 }`}
               >
-                <Save className="w-3 h-3" />
+                <Save className="w-4 h-4" />
               </button>
               
               {/* Botão Reset */}
               <button
                 onClick={resetGame}
-                className={`p-1.5 rounded-full transition-all duration-200 hover:scale-110 bg-red-500/20 text-red-400 ${
+                className={`p-2 rounded-full transition-all duration-200 hover:scale-110 bg-red-500/20 text-red-400 ${
                   isDark 
                     ? 'hover:bg-slate-800' 
                     : 'hover:bg-emerald-100'
                 }`}
               >
-                <RotateCcw className="w-3 h-3" />
+                <RotateCcw className="w-4 h-4" />
               </button>
             </div>
           </div>
