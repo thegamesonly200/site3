@@ -783,27 +783,6 @@ const MobileGameInterface: React.FC<MobileGameInterfaceProps> = ({ onBack }) => 
         </div>
 
         {/* Floating Controls */}
-        <div className="fixed top-20 right-4 z-50">
-          <div className={`flex items-center gap-2 px-3 py-2 rounded-full transition-colors duration-300 ${
-            isDark 
-              ? 'bg-slate-800/90 text-white' 
-              : 'bg-white/90 text-emerald-900 border border-emerald-200/50'
-          }`}>
-            <Clock className="w-4 h-4 text-emerald-400" />
-            <span className={`text-sm font-medium transition-colors duration-300 ${
-              isDark ? 'text-white' : 'text-emerald-900'
-            }`}>
-              {formatGameTime(gameState.hour, gameState.minute)}
-            </span>
-            <span className={`text-xs px-2 py-1 rounded-full transition-colors duration-300 ${
-              isDark 
-                ? 'bg-emerald-500/20 text-emerald-400' 
-                : 'bg-emerald-500/20 text-emerald-600'
-            }`}>
-              Dia {gameState.day}
-            </span>
-          </div>
-        </div>
       </div>
 
       {/* Room Navigation */}
