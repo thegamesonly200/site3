@@ -302,50 +302,14 @@ const MobileGameInterface: React.FC<MobileGameInterfaceProps> = ({ onBack }) => 
               <p className={`text-sm mb-6 leading-relaxed transition-colors duration-300 ${
                 isDark ? 'text-slate-300' : 'text-emerald-700'
               }`}>
-                Você está prestes a embarcar em uma jornada incrível! Ajude Alex a tomar as melhores decisões para criar uma rotina de sono saudável e equilibrada. 
-                Cada escolha que você fizer impactará diretamente no bem-estar e na qualidade de vida do Alex.
+                Ajude Alex a criar uma rotina de sono saudável! Tome as melhores decisões e cuide do bem-estar dele através de ações diárias inteligentes.
               </p>
-
-              <div className={`border rounded-xl p-4 mb-4 transition-colors duration-300 ${
-                isDark 
-                  ? 'bg-emerald-500/10 border-emerald-500/30' 
-                  : 'bg-emerald-100/80 border-emerald-300/50'
-              }`}>
-                <h3 className={`font-bold mb-3 transition-colors duration-300 ${
-                  isDark ? 'text-white' : 'text-emerald-900'
-                }`}>⏰ Como usar</h3>
-                <div className={`text-xs space-y-2 transition-colors duration-300 ${
-                  isDark ? 'text-slate-300' : 'text-emerald-700'
-                }`}>
-                  <p>🏠 <strong>Navegue:</strong> Toque nos botões dos cômodos para se mover</p>
-                  <p>🎮 <strong>Interaja:</strong> Toque nos objetos para realizar ações</p>
-                  <p>📊 <strong>Monitore:</strong> Acompanhe energia, humor e saúde do Alex</p>
-                </div>
-              </div>
-
-              <div className={`border rounded-xl p-4 mb-6 transition-colors duration-300 ${
-                isDark 
-                  ? 'bg-blue-500/10 border-blue-500/30' 
-                  : 'bg-blue-100/80 border-blue-300/50'
-              }`}>
-                <h3 className={`font-bold mb-3 transition-colors duration-300 ${
-                  isDark ? 'text-white' : 'text-emerald-900'
-                }`}>🎯 Seus Objetivos</h3>
-                <div className={`text-xs space-y-2 transition-colors duration-300 ${
-                  isDark ? 'text-slate-300' : 'text-emerald-700'
-                }`}>
-                  <p>⚡ <strong>Energia:</strong> Mantenha Alex descansado e ativo</p>
-                  <p>😊 <strong>Felicidade:</strong> Cuide do bem-estar emocional</p>
-                  <p>❤️ <strong>Saúde:</strong> Promova hábitos saudáveis</p>
-                  <p>🏆 <strong>Pontuação:</strong> Acumule pontos com boas escolhas</p>
-                </div>
-              </div>
 
               <div className={`text-center mb-6 transition-colors duration-300 ${
                 isDark ? 'text-slate-400' : 'text-emerald-600'
               }`}>
                 <p className="text-sm font-medium">✨ Boa sorte em sua jornada! ✨</p>
-                <p className="text-xs mt-1">Faça escolhas inteligentes e ajude Alex a ter o melhor sono possível!</p>
+                <p className="text-xs mt-1">Faça escolhas inteligentes e divirta-se!</p>
               </div>
               
               <button
