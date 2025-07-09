@@ -606,7 +606,6 @@ const MobileGameInterface: React.FC<MobileGameInterfaceProps> = ({ onBack }) => 
             <div className={`text-xs transition-colors duration-300 ${
               isDark ? 'text-slate-400' : 'text-gray-600'
             }`}>Total</div>
-            </div>
           </div>
         </div>
       </div>
