@@ -599,16 +599,13 @@ const MobileGameInterface: React.FC<MobileGameInterfaceProps> = ({ onBack }) => 
           <div className="text-center">
             <div className={`text-xs font-medium mb-1 transition-colors duration-300 ${
               isDark ? 'text-white' : 'text-emerald-900'
-            }`}>🏆 Pontos</div>
-            <div className={`flex items-center gap-1 px-2 sm:px-3 py-1 rounded-full transition-colors duration-300 ${
-              isDark 
-                ? 'bg-emerald-500/20 text-emerald-400' 
-                : 'bg-emerald-500/20 text-emerald-600'
-            }`}>
-              <Trophy className="w-3 h-3 sm:w-4 sm:h-4 text-emerald-400" />
-              <span className={`text-xs sm:text-sm font-medium transition-colors duration-300 ${
-                isDark ? 'text-emerald-400' : 'text-emerald-600'
-              }`}>{gameState.totalScore}</span>
+            }`}>Pontos</div>
+            <div className={`text-2xl font-bold mb-1 transition-colors duration-300 ${
+              isDark ? 'text-white' : 'text-gray-900'
+            }`}>{gameState.totalScore}</div>
+            <div className={`text-xs transition-colors duration-300 ${
+              isDark ? 'text-slate-400' : 'text-gray-600'
+            }`}>Total</div>
             </div>
           </div>
         </div>
